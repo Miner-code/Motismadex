@@ -1,0 +1,55 @@
+texte qui s'affiche lentement
+
+https://jsfiddle.net/Timart/vqk4y79m/
+
+
+Dresseur lien
+
+0 = Null
+1 = https://www.pokepedia.fr/images/f/f5/Luth-HGSS.png
+
+2 = https://www.pokepedia.fr/images/thumb/2/23/Ludwig-NB.png/200px-Ludwig-NB.png
+
+3 = https://www.pokepedia.fr/images/thumb/7/7d/M%C3%A9lis-NB2.png/200px-M%C3%A9lis-NB2.png
+
+4 = https://www.pokepedia.fr/images/thumb/1/19/Carolina-NB.png/200px-Carolina-NB.png
+
+5 = https://www.pokepedia.fr/images/thumb/7/70/Ludvina-NB.png/300px-Ludvina-NB.png
+
+6 = https://www.pokepedia.fr/images/thumb/6/6a/Red-PO.png/200px-Red-PO.png
+
+7 = https://www.pokepedia.fr/images/4/42/Blue-PO.png
+
+
+<?
+$typesPokemon = [
+    "Eau",
+    "Feu",
+    "Plante",
+    "Électrik",
+    "Glace",
+    "Combat",
+    "Vol",
+    "Poison",
+    "Sol",
+    "Roche",
+    "Insecte",
+    "Spectre",
+    "Normal",
+    "Psy",
+    "Acier",
+    "Ténèbres",
+    "Fée",
+    "Dragon"
+];
+
+// Table des types super efficaces
+$tableSuperEfficace = [
+    "Eau" => ["Feu", "Sol", "Roche"],
+    "Feu" => ["Plante", "Insecte", "Glace"],
+    "Plante" => ["Eau", "Sol", "Roche"],
+    "Électrik" => ["Eau", "Vol"],
+    // ... Ajoute les autres types et leurs faiblesses
+];
+
+?>
