@@ -1,0 +1,151 @@
+@font-face {
+	font-family: "Poppins Regular";
+	src: url("../stylesheet/police/Poppins-Regular.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins Light";
+	src: url("../stylesheet/police/Poppins-Light.ttf");
+  }
+  
+body
+{
+	position:fixed;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	background-color:rgba(32,48,77,0.7);
+	margin:0px;
+}
+footer{
+	position:fixed;
+	width:100%;
+	height:20%;
+	left:0px;
+	bottom:0px;
+	text-align: center;
+	
+}
+section
+{
+	position:fixed;
+	width:100%;
+	height:60%;
+	left:0px;
+	top:15%;
+	background-color: aliceblue;
+	margin:0px;
+	display:flex;
+
+}
+
+#passDress
+{
+	width:500px;
+	height:70%;
+	margin:auto;
+	background-color: rgb(250, 250, 250);
+	border-radius:25px;
+	border: 10px solid rgba(32,48,77,0.5);
+	box-shadow: 5px 15px 15px rgba(32,48,77,0.7);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#passDress h2, #passDress h4, #passDress h5
+{
+	margin:0;
+	
+}
+article
+{
+	display:flex;
+	text-align:left;
+	font-family: "Poppins Regular";
+}
+#article1, #article3
+{
+	
+}
+#article1 h2
+{
+	font-size:2em;
+	padding-left:5%;
+}
+#article2 div
+{
+	padding:2px;
+	font-size:1.2em;
+	text-align:center;
+	margin:auto;
+	background-color: rgba(32,48,77,0.2);
+	border-radius:15px;
+	border: 5px solid rgba(32,48,77,0.5);
+	cursor:pointer;
+}
+#article2 div:active
+{
+	
+
+	background-color: rgba(32,48,77,0.8);
+	color:white;
+	cursor:pointer;
+}
+#article3 div
+{
+	width:34%;
+	height:50%;
+	font-size:1.2em;
+	text-align:center;
+	
+}
+#article3{
+
+	background-color: rgb(240, 147, 147);
+	border-top: 4px solid rgba(0,0,0,0.4);
+	color:white;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+}
+
+.fullWindow
+{
+	display:none;
+	position: fixed;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.fullWindow form 
+{
+	width:400px;
+	margin:auto;
+	margin-top:auto;
+	background-color: aliceblue;
+	text-align:center;
+}
+
+.exit
+{
+	padding:2px;
+	font-size:1.2em;
+	text-align:center;
+	margin:auto;
+	background-color: rgba(32,48,77,0.2);
+	border-radius:15px;
+	border: 5px solid rgba(32,48,77,0.5);
+	cursor:pointer;
+}
+.exit:active
+{
+	
+
+	background-color: rgba(32,48,77,0.8);
+	color:white;
+	cursor:pointer;
+}

@@ -1,0 +1,455 @@
+/*
+5F7BAC
+rgba(95,123,172,1)
+
+
+
+Pour le responsive
+	- refaire la nav
+	- mettre le transform à 0 (les côtés) refaire une forme rectangle
+	- faire plusieurs versions du motisma
+*/
+@font-face {
+	font-family: "Poppins Regular";
+	src: url("../stylesheet/police/Poppins-Regular.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins Light";
+	src: url("../stylesheet/police/Poppins-Light.ttf");
+  }
+  body
+  {
+	  font-family: "Poppins Regular";
+	  font-family:Arial;
+	  position:fixed;
+	  width:100%;
+	  height:100%;
+	  left:0px;
+	  top:0px;
+	  background-color:rgba(32,48,77,0.7);
+	  margin:0px;
+  
+  }
+  
+  section
+  {
+	  z-index:40px;
+	  position:fixed;
+	  background-color:white;
+	  width:35%;
+	  height:84%;
+	  top:10%;
+	  left:5%;
+	  transform: skewX(-10deg);
+	  border:none;
+	  display:flex;
+	  flex-direction:column;
+	  background-color:rgba(32,48,77,0.7);
+	  box-shadow: 15px 15px 15px rgba(32,48,77,0.7);
+  }
+  
+  article{
+	  height:11%;
+	  border-bottom:1px solid rgba(32,48,77,1);
+	  border-top:1px solid rgba(32,48,77,1);
+	  background-color:white;
+	  overflow:hidden;
+	  margin:0px;
+  }
+  
+  article h2
+  {
+	  margin:0px;
+	  font-weight:bold;
+	  font-size:2em;
+	  padding-left:3%;
+  
+  }
+   article h3
+   {
+	  padding-right:2%;
+	  margin:0px;
+	  text-align:right;
+	  font-weight:bold;
+  }
+  
+  aside
+  {
+	  z-index:20;
+	  position:fixed;
+	  width:50%;
+	  height:85%;
+	  top:10%;
+	  left:40%;
+	  transform: skewX(-10deg);
+	  border:none;
+	  display:flex;
+	  flex-direction:column;
+	  box-shadow: 15px 15px 15px rgba(32,48,77,0.7);
+  }
+  
+  #fullAsideWidthHeight
+  {
+	  height:100%;
+	  width:100%;
+	  cursor: pointer;
+  }
+  
+  .fullAsideWidthHeightMotismadex{
+	  background:  center /  cover no-repeat url("https://pa1.aminoapps.com/6797/d4e90337056ce3d53c25e4380198d96447e55b99_hq.gif");
+  }
+  .fullAsideWidthHeightSashaEtc:hover
+  {
+	  background:  center /  cover no-repeat url("https://64.media.tumblr.com/8da1013538407144535de1803a82cf4d/tumblr_p5z64pm3Ga1tpvtc4o2_r2_500.gif");
+  }
+  .fullAsideWidthHeightBisous:hover
+  {
+	  background:  center /  cover no-repeat url("https://64.media.tumblr.com/fdf36084dbf607d931ccfb97dd8962af/tumblr_ozvtkzy1hb1uh3x51o2_540.gif");
+  }
+  
+  
+  /*-------IMG GEN background ---------*/
+  .GENbackgroundOpacity
+  {
+	  background-color:rgba(0,0,0,0.6);
+	  height:100%;
+	  width:100%;
+	  color:rgba(255,255,255,0.6);
+  }
+  .GENbackgroundOpacity:hover
+  {
+	  background-color:rgba(255,255,255,0.6);
+	  color:rgba(169,50,48,1);
+	  cursor: pointer;
+	  /*-color:rgba(32,48,77,1);*/
+  }
+  
+  #Kanto
+  {
+	  background: center /  100% no-repeat url("https://www.pokepedia.fr/images/4/44/Kanto_LGPE.png");
+  }
+  #Johto
+  {
+	  background: center / 100% no-repeat url("https://www.pokepedia.fr/images/thumb/f/f2/Johto_HGSS.jpg/1200px-Johto_HGSS.jpg");
+	  
+  }
+  #Hoenn
+  {
+	  background: center / 100% no-repeat url("https://www.pokepedia.fr/images/4/4c/Carte_de_Hoenn_ROSA.png");
+  }
+  #Sinnoh
+  {
+	  background: center / 100% no-repeat url("https://www.pokepedia.fr/images/thumb/9/99/Sinnoh-DEPS.png/1200px-Sinnoh-DEPS.png");
+  }
+  #Unys
+  {
+	  background: center / 100% no-repeat url("https://www.pokepedia.fr/images/a/ae/Unys_-_NB2.png");
+  }
+  #Kalos
+  {
+	  background: center / 100% no-repeat url("https://www.pokepedia.fr/images/d/d1/Kalos_-_XY.png");
+  }
+  #Alola
+  {
+	  background: center / 100% no-repeat url("https://www.pokepedia.fr/images/4/4d/Alola_-_USUL.png");
+  }
+  #Galar
+  {
+	  background: center / 100% no-repeat url("https://www.pokepedia.fr/images/b/bc/Galar_-_EB.png");
+  }
+  #Paldea
+  {
+	  background: center / 100% no-repeat url("https://www.pokepedia.fr/images/thumb/8/88/Paldea_-_EV.png/1200px-Paldea_-_EV.png");
+  }
+  
+  /*********************************************/
+  /************** POKEDEX *********************/
+  #pokedexGen
+  {
+	  display:none;
+	  width:100%;
+	  height:100%;
+	  background: center / cover no-repeat url("../img/backgroundPkdx.jpg");
+	  justify-content: space-between;
+  }
+  #searchPokedex
+  {
+	  width:200px;
+	  height:100%;
+  }
+  #regionPokemonChosenFromPokedex
+  {
+	  padding-left:20%;
+	  font-size:2em;
+	  font-weight:bold;
+	  font-family: Arial;
+	  background-color: rgb(70, 9, 8);
+	  border-top-right-radius:50px;
+	  border-bottom-right-radius:50px;
+	  color:aliceblue;
+	  cursor:pointer;
+  }
+  #pokemonChosenFromPokedex
+  {
+	  position:relative;
+	  top:0px;
+	  left:0px;
+	  width:100%;
+	  display:flex;
+	  justify-content: space-between;
+	  background-color: aliceblue;
+	  height:25px;
+	  border-bottom:4px solid rgb(70, 9, 8);
+	  border-right:3px solid rgb(70, 9, 8);
+	  border-bottom-right-radius:15px;
+	  cursor:pointer;
+  }
+  
+  #selectPokedex
+  {
+	  z-index:40;
+	  display:none;
+	  position:relative;
+	  width:200px;
+	  height:50%;
+	  overflow-y: scroll;
+	  background-color: rgba(240, 248, 255);
+	  border-left: 4px solid rgb(80, 34, 33);
+	  box-shadow: 1px 5px 10px rgb(80, 34, 33);
+	  border-top-right-radius:10px;
+  }
+  #pokemonChosenFromPokedex p
+  {
+	  margin:0px;
+	  background-color:rgb(80, 34, 33);
+	  color: aliceblue;
+	  font-weight:bold;
+	  font-size:1em;
+	  font-family: "Poppins Regular";
+	  width:50px;
+	  padding-left:3%;
+  }
+  #pokemonChosenFromPokedex h3 
+  {
+	  margin:0px;
+	  padding-right:3%;
+	  padding-top:1%;
+  }
+  .pokemonClassPokedex
+  {
+	  width:100%;
+	  margin-bottom:4%;
+	  display:flex;
+	  justify-content: space-between;
+	  background-color: aliceblue;
+	  height:25px;
+	  border-bottom:3px solid rgba(169,50,48,1);
+	  cursor:pointer;
+  }
+  .pokemonClassPokedex:hover
+  {
+	  background-color: rgb(147, 163, 177);
+  }
+  .pokemonClassPokedex p
+  {
+	  margin:0px;
+	  background-color:rgba(169,50,48,1);
+	  color: aliceblue;
+	  font-weight:bold;
+	  font-size:1em;
+	  font-family: "Poppins Regular";
+	  padding-left:2%;
+	  width:50px;
+  }
+  .pokemonClassPokedex h3
+  {
+	  margin:0px;
+	  padding-right:2%;
+  }
+  
+  /* CSS DE LA BARRE DE SCROLL */
+  #selectPokedex::-webkit-scrollbar {
+	  position:fixed;
+	  background-color: rgba(169,50,48,1);
+	  border-top-left-radius:200px;
+	  border-top-right-radius:200px;
+	  width:15px;
+	  
+  } /* this targets the default scrollbar (compulsory) */
+  
+  #selectPokedex::-webkit-scrollbar-track {
+	  background-color: none;
+	  border-left: none;
+	  
+	  
+  } /* the new scrollbar will have a flat appearance with the set background color */
+   
+  #selectPokedex::-webkit-scrollbar-thumb {
+	  background-color: rgb(80, 34, 33);
+	  border-top-left-radius:200px;
+	  border-top-right-radius:200px;
+	  
+  } /* this will style the thumb, ignoring the track */
+   
+  #selectPokedex::-webkit-scrollbar-button {
+	  display:none;
+  } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+   
+  #selectPokedex::-webkit-scrollbar-corner {
+		background-color: none;
+  } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+  
+  /*** info DU POKEMON ***/
+  
+  #infoPokemonChosenFromPokedex
+  {
+	  
+  
+	  flex-direction: column;
+  
+  }
+  #spritePokemonChosenFromPokedex
+  {
+	  background: top / 100% no-repeat url("../img/backgroundBall.png");
+	  width:100%;
+	  height:50%;
+	  display:flex;
+	  
+  }
+  #spritePokemonChosenFromPokedex img
+  {
+	  
+  }
+  #typePokemonChosenFromPokedex 
+  {
+	  text-align: center;
+  }
+  #typePokemonChosenFromPokedex img
+  {
+	  width:100px;
+	  height:30px;
+  
+  }
+  
+  #descriptionPokemonChosenFromPokedex
+  {
+	  position:relative;
+	  left:10%;
+	  top:30%;
+	  width:400px;
+	  font-size:1.1em;
+	  background-color: rgb(231, 222, 222);
+	  font-weight:bold;
+	  padding:10px;
+	  border:2px solid  rgb(80, 34, 33);
+	  border-top:4px solid  rgb(80, 34, 33);
+	  font-family: Arial;
+  }
+  
+  #infoTaillePoidsPokemonChosenPokedex p
+  {
+	  font-family: Arial;
+	  font-weight:bold;
+	  font-size:1.2em;
+	  margin:0;
+	  margin-top:2%;
+	  padding-left:35%;
+  }
+  #selectorPokedex
+  {
+	  width:0px;
+	  height:0px;	
+  }
+  
+  #choicePokemonAtWhatPlace
+  {
+	   display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+	  align-self: flex-end;
+	  
+  }
+  #formChoicePokemon{
+	  text-align: right;
+  }
+  input[type="radio"].demo2 {
+	  display: none;
+	}
+	input[type="radio"].demo2 + label {
+	  padding: 0.5rem 1rem;
+	  font-size: 1.25rem;
+	  line-height: 1.5;
+	  border-radius: 0.3rem;
+	  color: #fff;
+	  background-color: #6c757d;
+	  border: 1px solid transparent;
+	  transition: all 0.5s ease-in-out;
+	  cursor: pointer;
+	}
+	input[type="radio"].demo2.demoyes:hover + label {
+	  background-color: #218838;
+	  border-color: #1e7e34;
+	}
+	input[type="radio"].demo2.demoyes:checked + label {
+	  background-color: #28a745;
+	  border-color: #28a745;
+	}
+	input[type="radio"].demo2.demono:hover + label {
+	  background-color: #c82333;
+	  border-color: #bd2130;
+	}
+	input[type="radio"].demo2.demono:checked + label {
+	  background-color: #dc3545;
+	  border-color: #dc3545;
+	}
+  #voteButton
+  {
+	  transition: all 0.3s ease-in-out;
+	  margin-top:20px;
+	  padding:5px;
+	  margin-bottom: 1%;
+	  cursor:pointer;
+  }
+  #voteButton:hover
+  {
+	  background-color: rgba(80, 34, 33, 0.6);
+	  color:aliceblue;
+  }
+  #voteButton:active
+  {
+	  background-color: rgb(0, 0, 0);
+  }
+  
+  
+  @media screen and (max-width: 1120px) {
+	  section, aside, #selectPokedex
+	  {
+		  transform: skewX(0deg);;
+	  }
+	  aside
+	  {
+		  width:80%;
+		  left:10%;
+		  top:11%;
+	  }
+	  article h3
+	  {
+		  display:none;
+	  }	
+	  section
+	  {
+		  width:80%;
+		  display:none;
+		  left:10%;
+	  }
+	  #descriptionPokemonChosenFromPokedex
+	  {
+		  position:absolute;
+		  left:6%;
+		  top:75%;
+		  width:300px;
+	  }
+	  
+  }
+  

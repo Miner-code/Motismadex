@@ -1,0 +1,222 @@
+@font-face {
+	font-family: "Poppins Regular";
+	src: url("../stylesheet/police/Poppins-Regular.ttf");
+  }
+  
+  @font-face {
+	font-family: "Poppins Light";
+	src: url("../stylesheet/police/Poppins-Light.ttf");
+  }
+  
+  
+  aside
+  {
+	  position:fixed;
+	  /* background-color:white; */
+	  width:50%;
+	  height:85%;
+	  top:10%;
+	  left:40%;
+  }
+  
+  /*******************************************************************/
+  /****************** PARTIE CONNEXION ******************************/
+  
+  #connexionSection
+  {
+	  font-family: "Poppins Light";
+	  position:fixed;
+	  background-color:white;
+	  width:300px;
+	  top:10%;
+	  left:5%;
+	  text-align:center;
+	  border:none;
+	  border-radius:2%;
+	  display:flex;
+	  flex-direction:column;
+	  
+	  box-shadow: 15px 15px 15px rgba(32,48,77,0.7);
+  }
+  section h5
+  {
+	  margin:15px;
+	  margin-top:25px;
+  }
+  
+  section a 
+  {
+	  color:black;
+  }
+  section a:hover
+  {
+	  color:rgba(169,50,48,1);
+  }
+  .inputRegister,.inputConnexion
+  {
+	  width:85%;
+	  margin:auto;
+	  margin-bottom:4%;
+	  color:white;
+	  background-color:rgba(32,48,77,0.7);	
+	  padding-left:2%;
+	  box-shadow: 2px 2px 2px rgba(32,48,77,0.7);
+  }
+  .buttonSubmit
+  {
+	  cursor: pointer;
+	  border: 2px solid rgba(32,48,77,0.7);
+	  border-radius: 5px;
+	  background-color:white;
+	  box-shadow: 2px 2px 2px rgba(32,48,77,0.7);
+  }
+  .buttonSubmit:active {
+	  font-size:0.5em;
+  }
+  .inputRegister::placeholder, .inputConnexion::placeholder
+  {
+	  color:white;
+	  padding-left:2%;
+	  font-family: "Poppins Regular";
+  }
+  footer
+  {
+	  font-family: "Poppins Regular";
+	  position:fixed;
+	  background-color:white;
+	  right:0px;
+	  bottom:0px;
+	  width:100%;
+	  height:20%;
+	  box-shadow: 5px 15px 15px rgba(32,48,77,0.7);
+	  justify-content:space-between;	
+  }
+  
+  footer h2
+  
+  {
+	  width:96%;
+	  margin:auto;
+	  margin-top:0px;
+  }
+  
+  /*******************************************************************/
+  /****************** PARTIE INSCRIPTION ****************************/
+  
+  #inscriptionSection
+  {
+	  font-family: "Poppins Light";
+	  position:fixed;
+	  background-color:white;
+	  width:300px;
+	  top:10%;
+	  left:5%;
+	  text-align:center;
+	  border:none;
+	  border-radius:2%;
+	  display:flex;
+	  flex-direction:column;
+	  box-shadow: 15px 15px 15px rgba(32,48,77,0.7);
+  }
+  /*******************************************************************/
+  /*************** PARTIE CREATION DRESSEUR *************************/
+  #creationDresseurSection1
+  {
+	  position:fixed;
+	  height:100%;
+	  width: 100%;
+	  top:15%;
+	  text-align:center;
+	  font-family: "Poppins Light";
+	  color:rgba(255,255,255,0.5);
+  }
+  #allDresseurPicture
+  {
+	  display:flex;
+	  height:100%;
+	  width:100%;
+	  
+  }
+  .ChoiceDresseurPicture 
+  {
+	  width:200px;
+  }
+  
+  #dresseur1
+  {
+	  width:170px;
+  }
+  #dresseur2
+  {
+	  width:140px;
+  }
+  #dresseur3, #dresseur5,  #dresseur7
+  {
+	  width:150px;
+  }
+  #dresseur4
+  {
+	  width:200px;
+  }
+  #dresseur6
+  {
+	  width:180px;
+  }
+  .pictureDresseur:hover
+  {
+	  width:200px;
+	  background-color: aliceblue;
+	  cursor: pointer;
+  }
+  
+  #creationDresseurSection2
+  {
+	  font-family: "Poppins Light";
+	  position:fixed;
+	  background-color:rgba(0,0,0,0.8);
+	  width:40%;
+	  height:30%;
+	  top:15%;
+	  left:30%;
+	  text-align:center;
+	  border:none;
+	  display:flex;
+	  flex-direction:column;
+	  color:white;
+	  box-shadow: 15px 15px 15px rgba(32,48,77,0.7);
+  }
+  .inputCreationDresseur
+  {
+	  width:75%;
+	  margin:auto;
+	  
+	  font-size:1.2em;
+	  background-color:rgba(255,255,255,0.5);	
+	  padding-left:2%;
+	  box-shadow: 2px 2px 2px rgba(32,48,77,0.7);
+  }
+  
+  .inputCreationDresseur::placeholder
+  {
+	  color:black;
+	  padding-left:2%;
+  
+	  font-family: "Poppins Regular";
+  }
+  #radioChoiceDresseur
+  {
+	  
+  }
+  
+  
+  
+  /*******************************************************************/
+  /*************** HEADER ET IMG *************************/
+  
+  
+  @media screen and (max-width: 1120px) {	
+	  aside
+	  {
+		  top:15%;
+	  }	
+  }
